@@ -3,7 +3,7 @@
   <persistence-unit name="prod" transaction-type="JTA">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <properties>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
     </properties>
   </persistence-unit>
 </persistence>
